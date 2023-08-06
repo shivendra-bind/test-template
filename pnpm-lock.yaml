@@ -145,6 +145,9 @@ devDependencies:
   cross-fetch:
     specifier: ^4.0.0
     version: 4.0.0
+  cz-conventional-changelog:
+    specifier: ^3.3.0
+    version: 3.3.0
   eslint:
     specifier: ^8.46.0
     version: 8.46.0
@@ -14451,6 +14454,7 @@ packages:
       {
         integrity: sha512-yPw4Sng1gWghHQWj0B3ZggWUm4qVbPwPFcRG8KyxiU7J2OHFSoEHKS+EZ3fv5l1t9CyCiop6l/ZYeWbrgoQejw==,
       }
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -15432,6 +15436,7 @@ packages:
       {
         integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==,
       }
+    requiresBuild: true
     dev: true
     optional: true
 

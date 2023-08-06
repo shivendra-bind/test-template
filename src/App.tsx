@@ -23,7 +23,6 @@ const App: React.FC = () => {
   return (
     <main className="App">
       <img src={logo} className="App-logo" alt="logo" />
-      <p>{process.env.SB_TEXT}</p>
       <p>
         <button
           type="button"
