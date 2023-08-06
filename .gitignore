@@ -1,7 +1,0 @@
-node_modules
-.DS_Store
-dist
-dist-ssr
-*.local
-playwright-report/index.html
-.env
