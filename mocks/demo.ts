@@ -1,6 +1,8 @@
 import { rest } from 'msw'
+
+import { settings } from '../src/config/settings'
 export const testHandlers = [
-  rest.get('http://localhost:3000/api/docs_list', (req, res, ctx) => {
+  rest.get(`${settings.BASE_URL}/docs_list`, (req, res, ctx) => {
     const data = [
       { name: 'MSW', url: 'https://mswjs.io/' },
       { name: 'Tailwind CSS', url: 'https://tailwindcss.com/' },
