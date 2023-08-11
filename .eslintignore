@@ -4,3 +4,4 @@ dist-ssr
 playwright.config.ts
 mocks
 playwright-report
+test-results

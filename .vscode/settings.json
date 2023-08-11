@@ -25,7 +25,9 @@
   },
   "prettier.ignorePath": ".gitignore",
   "cSpell.words": [
+    "bezier",
     "codegen",
+    "keyframes",
     "lucide",
     "svgr",
     "tanstack",
