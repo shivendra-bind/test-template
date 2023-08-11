@@ -9,7 +9,8 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - name: 'Create env file'
+      - name: 'Create env'
+        run: echo "Create env"
         env:
           SB_API_PREFIX: ${{ env.SB_API_PREFIX }}
           SB_API_VERSION: ${{ env.SB_API_VERSION }}
