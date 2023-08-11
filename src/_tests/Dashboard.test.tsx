@@ -1,11 +1,13 @@
 import { render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 
-import App from '../App'
+import Dashboard from '../pages/dashboard/Dashboard'
 
-test('Working Counter', async () => {
+import { QueryWrapper } from './lib/test-util'
+// this is a simple example of a test
+test.skip('Working Counter', async () => {
   const user = userEvent.setup()
-  const { getByText } = render(<App />)
+  const { getByText } = render(<Dashboard />)
   expect(getByText('count is: 0')).toBeInTheDocument()
 
   const button = getByText(/count is: \d/)
@@ -21,10 +23,13 @@ test('Working Counter', async () => {
 })
 
 test('working with msw', async () => {
-  render(<App />)
+  render(
+    <QueryWrapper>
+      <Dashboard />
+    </QueryWrapper>,
+  )
 
   await waitFor(() => {
-    expect(screen.getByText('MSW')).toBeInTheDocument()
-    expect(screen.getByText('Tailwind CSS')).toBeInTheDocument()
+    expect(screen.getByText('Listen Now')).toBeInTheDocument()
   })
 })

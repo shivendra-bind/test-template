@@ -1,3 +1,4 @@
-import { testHandlers } from './test'
+import { dashboardHandlers } from './dashboard'
+import { testHandlers } from './demo'
 
-export const handlers = [...testHandlers]
+export const handlers = [...testHandlers, ...dashboardHandlers]

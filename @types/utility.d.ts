@@ -1,7 +1,7 @@
 import type { Dispatch, SetStateAction } from 'react'
 
 declare global {
-  type AnyFunction = (...args: any[]) => any
+  type AnyFunction = (...args: unknown[]) => unknown
 }
 
 declare module 'react' {
