@@ -6,6 +6,9 @@ on:
     branches: [main]
 jobs:
   test:
+    strategy:
+      matrix:
+        node-version: [18.x]
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
