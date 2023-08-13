@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/named
 import { QueryClient } from '@tanstack/react-query'
 
 const queryClient = new QueryClient({
